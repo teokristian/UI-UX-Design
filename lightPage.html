@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" />
+
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+<link rel='stylesheet' href='font/typicons.min.css' />
+<link rel="stylesheet" type="text/css" href="css/teoLIGHT.css" />
+<style>
+.dropbtn {
+    background-color: white;
+    color: #6C1827;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 40px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 2px 2px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+  </head>
+
+  <body>
+    <div class="mainDiv">
+      <ul class="gn-menu-main">
+        <li class = "gorilla">
+          <a><img src="assets/images/gorilla.png" title="Gorilla" width="100" style="padding-top:15px;"></a><title>Cave</title>
+          <titleSub style="font-size:10px;">System 1.0</titleSub>
+        </li>
+        <li>
+          <a><span class="typcn typcn-user"></span>Accounts</a>
+        </li>
+        <li>
+          <a href="home.html"><span class="typcn typcn-home-outline"></span>Home</a>
+        </li>
+        <li>
+          <a href="Energy.html"><span class="typcn typcn-flash-outline"></span>Energy</a>
+        </li>
+        <li>
+          <a href="security.html"><span class="typcn typcn-lock-closed-outline"></span>Security</a>
+        </li>
+        <li>
+          <a><span class="typcn typcn-book"></span>Logs</a>
+        </li>
+      </ul>
+  </div>
+      <div class="pictureHome">
+        <ul>
+          <li class ="special">
+        <a  style="font-size:30px; color:white; padding-left:50px; padding-top:100px; color:black;">Lights</a>
+<a style="padding-left:500px;">
+
+  <a style="padding-top: 25px; padding-left: 895px; font-size:15px; color: black;"> Logged In as: <span>
+  Juan
+  </span>
+  </a>
+  <div class="homeLine" style="margin-left:15px; width:88%"></div>
+</a>
+      </li>
+
+<li style="padding-left:50px; padding-top:160px;">
+  <table width="1500">
+<tr height="0px" style="font-size: 24px; font-weight:bold">
+      <td width="500">Light</td>
+      <td width="500">Status</td>
+      <td width="500">On or Off</td>
+
+
+<tr height="100px">
+      <td width="500">Balcony</td>
+      <td width="500" id="Onn">Off</td>
+      <td width="500">
+      <span><a href="#" class="btn btn-info" onClick="myFunctionOn()" style="width:80px"><i class="icon-home icon-white"></i>On</a></span>
+      <span><a href="#" class="btn btn-info" onClick="myFunctionOff()" style="width:80px"><i class=icon-home></i>  Off  </a></span></td>
+</tr>
+
+<tr height="100px" style="font-size: 22px;">
+      <td width="500">Living Room</td>
+      <td width="500" id= "Onn">Off</td>
+      <td width="500">      <span><a href="#" class="btn btn-info" onClick="myFunctionOn()" style="width:80px"><i class="icon-home icon-white"></i>On</a></span>
+            <span><a href="#" class="btn btn-info" onClick="myFunctionOff()" style="width:80px"><i class=icon-home></i>  Off  </a></span></td>
+</tr>
+
+<tr height="100px">
+      <td width="500">Bedroom</td>
+      <td width="500" id="On">On</td>
+      <td width="500">      <span><a href="#" class="btn btn-info" onClick="myFunctionOn()" style="width:80px"><i class="icon-home icon-white"></i>On</a></span>
+            <span><a href="#" class="btn btn-info" onClick="myFunctionOff()" style="width:80px"><i class=icon-home></i>  Off  </a></span></td>
+</tr>
+
+<tr height="100px">
+      <td width="500">Hallway</td>
+      <td width="500" id="On">Off</td>
+      <td width="500">      <span><a href="#" class="btn btn-info" onClick="myFunctionOn()" style="width:80px"><i class="icon-home icon-white"></i>On</a></span>
+            <span><a href="#" class="btn btn-info"onClick="myFunctionOff()" style="width:80px"><i class=icon-home></i>  Off  </a></span></td>
+</tr>
+
+<tr height="100px">
+      <td width="500">Bathroom</td>
+      <td width="500" id="On">Off</td>
+      <td width="500">      <span><a href="#" class="btn btn-info" onClick="myFunctionOn()" style="width:80px"><i class="icon-home icon-white"></i>On</a></span>
+            <span><a href="#" class="btn btn-info" onClick="myFunctionOff()" style="width:80px"><i class=icon-home></i>  Off  </a></span></td>
+</tr>
+
+  </table>
+
+</li>
+
+<li style = "padding-top:150px; padding-left: 0px"> Cave<span class="typcn typcn-media-record"></span> 2016
+  <span style="padding-left:1440px">Connect to </span>
+  <span class="typcn typcn-social-facebook-circular"></span>
+  <span class="typcn typcn-social-google-plus"></span>
+  <span class="typcn typcn-social-twitter"></span>
+  <span class="typcn typcn-social-linkedin-circular"></span>
+</li>
+    </ul>
+      </div>
+
+	  <script>
+	  function myFunctionOn() {
+	  document.getElementById("On").innerHTML = "On"
+	  }
+
+	  function myFunctionOff(){
+	  document.getElementById("On").innerHTML = "Off"
+	  }
+
+	  </script>
+
+
+
+
+  </body>
+  </html>
